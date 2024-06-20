@@ -6,10 +6,10 @@ const Avatar = () => {
     return (  
         <Image 
             className="rounded-full"
-            height="30"
-            width="30"
+            height="25"
+            width="25"
             alt="Avatar"
-            src="/images/placeholder.png"
+            src="/images/user.png"
 
         />
     );

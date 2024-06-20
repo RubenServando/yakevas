@@ -30,7 +30,7 @@ const UserMenu = () => {
                         cursor-pointer
                     "
                 >
-                    Yaquevas portate!
+                    Yaquevas pórtate!
                 </div>
                 <div
                     onClick={toggleOpen}

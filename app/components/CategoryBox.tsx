@@ -8,14 +8,12 @@ import qs from "query-string";
 interface CategoryBoxProps {
     icon: IconType;
     label: string;
-    description: string;
     selected?: boolean;
 }
 
 const CategoryBox: React.FC<CategoryBoxProps> = ({
     icon: Icon,
     label,
-    description,
     selected
 }) => {
     const router = useRouter();

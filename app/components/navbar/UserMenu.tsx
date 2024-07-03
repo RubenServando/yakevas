@@ -56,7 +56,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         cursor-pointer
                     "
                 >
-                    Yaquevas pórtate!
+                    Yaquevas transport it!
                 </div>
                 <div
                     onClick={toggleOpen}

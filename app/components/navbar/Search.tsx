@@ -46,7 +46,7 @@ const Search = () => {
                         text-center
                     "
                 >
-                    Any Week
+                    Anytime
                 </div>
                 <div
                     className="
@@ -60,7 +60,7 @@ const Search = () => {
                     gap-3
                     "
                 >
-                    <div className="hidden sm:block">Add Guests</div>
+                    <div className="hidden sm:block">Add Package</div>
                     <div
                         className="
                             p-2

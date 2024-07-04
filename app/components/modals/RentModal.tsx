@@ -9,6 +9,8 @@ import Modal from "./Modal";
 import Heading from "../Heading";
 import CategoryInput from "../inputs/CategoryInput";
 import CountrySelect from "../inputs/CountrySelect";
+import Counter from "../inputs/Counter";
+import ImageUpload from "../inputs/ImageUpload";
 import dynamic from "next/dynamic";
 
 
@@ -39,7 +41,9 @@ const RentModal = () => {
         defaultValues: {
             category: '',
             location: null,
-            VolumeCount: 1,
+            packageCount: 1,
+            // roomCount: 1,
+            // bathroomCount: 1,
             imageSrc: '',
             price: 1,
             title: '',
@@ -49,6 +53,10 @@ const RentModal = () => {
 
     const category = watch('category');
     const location = watch('location');
+    const packageCount = watch('packageCount');
+    // const roomCount = watch('roomCount');
+    // const bathroomCount = watch('bathroomCount');
+    const imageSrc = watch('imageSrc');
 
     const Map = useMemo(() => dynamic(() => import('../Map'), {
         ssr: false
@@ -134,6 +142,52 @@ const RentModal = () => {
             </div>
         )
     }
+
+    if (step === STEPS.INFO) {
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading 
+                    title="Share some basics about your transportation"
+                    subtitle="What volumen do you have?"
+                />
+                <Counter 
+                    title="Amount of packages"
+                    subtitle="How many packages do you allow?"
+                    value={packageCount}
+                    onChange={(value) => setCustomValue('packageCount', value)}
+                />
+                {/* <hr />
+                <Counter 
+                    title="Amount of rooms"
+                    subtitle="How many rooms do you allow?"
+                    value={roomCount}
+                    onChange={(value) => setCustomValue('roomCount', value)}
+                />
+                <hr />
+                <Counter 
+                    title="Amount of bathrooms"
+                    subtitle="How many bathrooms do you allow?"
+                    value={bathroomCount}
+                    onChange={(value) => setCustomValue('bathroomCount', value)}
+                /> */}
+            </div>
+        )
+    }
+
+    if (step === STEPS.IMAGES) {
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading 
+                    title="Add a photo of your place"
+                    subtitle="Show users what your transportation looks like!"
+                />
+                <ImageUpload 
+                    value={imageSrc}
+                    onChange={(value) => setCustomValue('imageSrc', value)}
+                />
+            </div>
+        )
+    };
 
     return ( 
         <Modal 

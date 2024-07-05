@@ -42,8 +42,6 @@ const RentModal = () => {
             category: '',
             location: null,
             packageCount: 1,
-            // roomCount: 1,
-            // bathroomCount: 1,
             imageSrc: '',
             price: 1,
             title: '',
@@ -54,8 +52,6 @@ const RentModal = () => {
     const category = watch('category');
     const location = watch('location');
     const packageCount = watch('packageCount');
-    // const roomCount = watch('roomCount');
-    // const bathroomCount = watch('bathroomCount');
     const imageSrc = watch('imageSrc');
 
     const Map = useMemo(() => dynamic(() => import('../Map'), {
@@ -156,20 +152,6 @@ const RentModal = () => {
                     value={packageCount}
                     onChange={(value) => setCustomValue('packageCount', value)}
                 />
-                {/* <hr />
-                <Counter 
-                    title="Amount of rooms"
-                    subtitle="How many rooms do you allow?"
-                    value={roomCount}
-                    onChange={(value) => setCustomValue('roomCount', value)}
-                />
-                <hr />
-                <Counter 
-                    title="Amount of bathrooms"
-                    subtitle="How many bathrooms do you allow?"
-                    value={bathroomCount}
-                    onChange={(value) => setCustomValue('bathroomCount', value)}
-                /> */}
             </div>
         )
     }
@@ -187,7 +169,7 @@ const RentModal = () => {
                 />
             </div>
         )
-    };
+    }
 
     return ( 
         <Modal 

@@ -1,13 +1,7 @@
-'use client';
-
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
 import { useCallback } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
-
-declare global {
-    var cloudinary: any;
-}
 
 interface ImageUploadProps {
     onChange: (value: string) => void;
@@ -19,12 +13,17 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
     value
 }) => {
     const handleUpload = useCallback((result: any) => {
-        onChange(result.info.secure_url);
+        if (result.event === 'success') {
+            onChange(result.info.secure_url);
+        } else {
+            console.error("Upload failed:", result.error.message);
+            // Puedes manejar el error aquí si lo deseas
+        }
     }, [onChange]);
 
     return ( 
         <CldUploadWidget 
-            onUploadAdded={handleUpload}
+            onSuccess={handleUpload}
             uploadPreset="s2qvr8sd"
             options={{
                 maxFiles: 1
@@ -56,9 +55,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
                             Click to upload
                         </div>
                         {value && (
-                            <div
-                                className="absolute inset-0 w-full h-full"
-                            >
+                            <div className="absolute inset-0 w-full h-full">
                                 <Image
                                     alt="Upload"
                                     fill

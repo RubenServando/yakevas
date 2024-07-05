@@ -18,14 +18,14 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
     onChange,
     value
 }) => {
-const handleUpload = useCallback((result: any) => {
-    onChange(result.info.secure_url)
-}, [onChange]);
+    const handleUpload = useCallback((result: any) => {
+        onChange(result.info.secure_url);
+    }, [onChange]);
 
     return ( 
         <CldUploadWidget 
             onUploadAdded={handleUpload}
-            uploadPreset="i9x3lh8a"
+            uploadPreset="s2qvr8sd"
             options={{
                 maxFiles: 1
             }}
@@ -50,7 +50,7 @@ const handleUpload = useCallback((result: any) => {
                             gap-4
                             text-neutral-600
                         "
-                        >
+                    >
                         <TbPhotoPlus size={50} />
                         <div className="font-semibold text-lg">
                             Click to upload
@@ -62,16 +62,16 @@ const handleUpload = useCallback((result: any) => {
                                 <Image
                                     alt="Upload"
                                     fill
-                                    style={{ objectFit: 'cover'}}
+                                    style={{ objectFit: 'cover' }}
                                     src={value}
                                 />
                             </div>
                         )}
                     </div>
-                )
+                );
             }}
         </CldUploadWidget>
-     );
+    );
 }
- 
+
 export default ImageUpload;

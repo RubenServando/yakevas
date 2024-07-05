@@ -178,7 +178,7 @@ const RentModal = () => {
         bodyContent = (
             <div className="flex flex-col gap-8">
                 <Heading 
-                    title="Add a photo of your place"
+                    title="Add a photo of your transportation"
                     subtitle="Show users what your transportation looks like!"
                 />
                 <ImageUpload 

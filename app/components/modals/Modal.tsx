@@ -70,7 +70,7 @@ const Modal: React.FC<ModalProps> = ({
         <>
             <div
                 className="
-                    justufy-center
+                    justify-center
                     items-center
                     flex
                     overflow-x-hidden

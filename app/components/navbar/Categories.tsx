@@ -3,108 +3,35 @@
 import Container from "../Container";
 import CategoryBox from "../CategoryBox";
 
+import { GiCardboardBoxClosed } from "react-icons/gi";
 import { MdLocalShipping } from "react-icons/md";
-import { PiAirplaneTiltFill } from "react-icons/pi";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
-import { FaShip, FaSkiing } from "react-icons/fa";
-
-import { TbMountain, TbPool } from "react-icons/tb";
-import { 
-        GiBarn,
-        GiBoatFishing, 
-        GiCactus, 
-        GiCastle, 
-        GiCaveEntrance, 
-        GiForestCamp, 
-        GiIsland } from "react-icons/gi";
-
-import { BsSnow } from "react-icons/bs";
-import { IoDiamond } from "react-icons/io5";
+import { FaShip, FaCarSide } from "react-icons/fa";
+import { PiAirplaneTiltFill } from "react-icons/pi";
 
 import { usePathname, useSearchParams } from "next/navigation";
 
-
 export const categories = [
     {
-        label: 'Walk',
-        icon: FaPersonWalkingLuggage,
+        label: '≤ 1 Kg',
+        icon: GiCardboardBoxClosed,
         description: 'Tansportation by walk!'
     },
     {
-        label: 'Road',
-        icon: MdLocalShipping,
+        label: '5 Kg',
+        icon: FaPersonWalkingLuggage,
         description: 'Transportation by road!'
     },
     {
-        label: 'Ferry',
-        icon: FaShip,
+        label: '10 Kg',
+        icon: FaCarSide,
         description: 'Tansportation by ferry!'
     },
     {
-        label: 'Plane',
-        icon: PiAirplaneTiltFill,
+        label: '≥ 20 Kg',
+        icon: MdLocalShipping,
         description: 'Transportation by plane!'
     }
-    // {
-    //     label: 'Countryside',
-    //     icon: TbMountain,
-    //     description: 'This property is in the countryside!'
-    // },
-    // {
-    //     label: 'Pools',
-    //     icon: TbPool,
-    //     description: 'This property has a pool!'
-    // },
-    // {
-    //     label: 'Islands',
-    //     icon: GiIsland,
-    //     description: 'This property is on an island!'
-    // },
-    // {
-    //     label: 'Lake',
-    //     icon: GiBoatFishing,
-    //     description: 'This property is close to a lake!'
-    // },
-    // {
-    //     label: 'Skiing',
-    //     icon: FaSkiing,
-    //     description: 'This property has skiing activities!'
-    // },
-    // {
-    //     label: 'Castle',
-    //     icon: GiCastle,
-    //     description: 'This property is in a castle!'
-    // },
-    // {
-    //     label: 'Camping',
-    //     icon: GiForestCamp,
-    //     description: 'This property has camping activities!'
-    // },
-    // {
-    //     label: 'Arctic',
-    //     icon: BsSnow,
-    //     description: 'This property has camping activities!'
-    // },
-    // {
-    //     label: 'Cave',
-    //     icon: GiCaveEntrance,
-    //     description: 'This property has camping activities!'
-    // },
-    // {
-    //     label: 'Desert',
-    //     icon: GiCactus,
-    //     description: 'This property has camping activities!'
-    // },
-    // {
-    //     label: 'Barns',
-    //     icon: GiBarn,
-    //     description: 'This property has camping activities!'
-    // },
-    // {
-    //     label: 'Lux',
-    //     icon: IoDiamond,
-    //     description: 'This property has camping activities!'
-    // }
 ]
 
 const Categories = () => {

@@ -72,8 +72,6 @@ const Search = () => {
                         <BiSearch size={18} />
                     </div>
                 </div>
-
-
             </div>
 
         </div>

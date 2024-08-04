@@ -13,6 +13,7 @@ const Detinations = () => {
                 w-full
                 md:w-auto
                 py-5
+                m-5
                 rounded-xl
                 shadow-sm
                 hover:shadow-md
@@ -27,7 +28,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -41,7 +42,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -55,7 +56,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -69,7 +70,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -83,7 +84,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -97,7 +98,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -111,7 +112,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "
@@ -125,7 +126,7 @@ const Detinations = () => {
                     text-sm
                     font-semibold
                     px-6
-                    border-x-[1px]
+                    border-x-[0.5px]
                     flex-1
                     text-center
                 "

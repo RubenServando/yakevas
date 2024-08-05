@@ -95,16 +95,17 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         right-0
                         top-12
                         text-sm
+                        z-50
                     "
                 >
                     <div className="flex flex-col cursor-pointer">
                         {currentUser ? (
 
                             <>
-                                <MenuItem 
+                                {/* <MenuItem 
                                     onClick={() => {}}
                                     label="My trips"
-                                />
+                                /> */}
                                 <MenuItem 
                                     onClick={() => {}}
                                     label="My favorites"
@@ -115,7 +116,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                                 />
                                 <MenuItem 
                                     onClick={() => {}}
-                                    label="My properties"
+                                    label="My transportations"
                                 />
                                 <MenuItem 
                                     onClick={rentModal.onOpen}

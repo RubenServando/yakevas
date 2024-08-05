@@ -41,8 +41,8 @@ const Navbar: React.FC<NavbarProps> = ({
                     </div>
                 </Container>
             </div>
-            <Categories />
-            <Destinations />
+            <Categories  />
+            <Destinations  />
         </div>
     );
 }

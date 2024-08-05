@@ -90,7 +90,7 @@ const Destinations: React.FC = () => {
             <DestinationsItems
               key={index}
               title={option.main}
-              sub={option.sub}
+            //   sub={option.sub}
               background={option.background}
               icon={option.icon}
               open={activeIndex === index}

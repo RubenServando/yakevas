@@ -5,7 +5,7 @@ import React from "react";
 
 type Props = {
   title: string;
-  sub: string;
+//   sub: string;
   background: string;
   icon: string;
   open: boolean;
@@ -14,7 +14,7 @@ type Props = {
 
 const DestinationsItems: React.FC<Props> = ({
   title,
-  sub,
+//   sub,
   background,
   icon,
   open = false,
@@ -55,7 +55,7 @@ const DestinationsItems: React.FC<Props> = ({
           w-[40px] 
           h-[40px] 
           rounded-full
-          bg-yellow-400
+          bg-yellow-200
           text-black
         ">
             <Image
@@ -71,7 +71,7 @@ const DestinationsItems: React.FC<Props> = ({
           flex-col 
           justify-center 
           ml-[20px]
-          text-yellow-400
+          text-yellow-200
           whitespace-pre
         ">
           <div className={`
@@ -83,15 +83,15 @@ const DestinationsItems: React.FC<Props> = ({
           `}>
             <div className="
               font-bold 
-              text-[1.2rem]
+              text-[1.7rem]
             ">
               {title}
             </div>
-            <div className="
+            {/* <div className="
               transition-delay-100
             ">
               {sub}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

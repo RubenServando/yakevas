@@ -34,8 +34,8 @@ const DestinationsItems: React.FC<Props> = ({
         flex
         items-center
         justify-center
-        ${open ? 'flex-grow-[4.4] scale-100 max-w-[10] md:rounded-[20px]' : 'flex-grow-[1] md:rounded-[20px]'}
-        h-[200px] md:h-[250px]
+        ${open ? 'flex-grow-[4.4] scale-100 md:rounded-[20px]' : 'flex-grow-[1.5] md:rounded-[20px]'}
+        md:h-[250px]
       `}
       style={{ backgroundImage: background, backgroundSize: 'cover' }}
     >
@@ -58,7 +58,13 @@ const DestinationsItems: React.FC<Props> = ({
           bg-yellow-400
           text-black
         ">
-          <i className={icon}></i>
+            <Image
+            alt=""
+            src={icon}
+            width={25}
+            height={25}
+            className="h-[25px] w-[25px]"
+          />
         </div>
         <div className="
           flex 

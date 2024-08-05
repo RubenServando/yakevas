@@ -7,49 +7,49 @@ import Container from "../Container";
 const optionsData = [
   {
     background: 'url(/images/black.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-hierro.svg',
     main: 'El Hierro',
     sub: 'Un continente en miniatura',
   },
   {
     background: 'url(/images/white.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-fuerteventura.svg',
     main: 'Fuerteventura',
     sub: 'Infinidad de playas sinfin',
   },
   {
     background: 'url(/images/yellow.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-grancanaria.svg',
     main: 'Gran Canaria',
     sub: 'Roque nublo por bandera',
   },
   {
     background: 'url(/images/blue.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-gomera.svg',
     main: 'La Gomera',
     sub: 'Corazón de laurisilva',
   },
   {
     background: 'url(/images/snow.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-tenerife.svg',
     main: 'Tenerife',
     sub: 'De la cumbre a la costa',
   },
   {
     background: 'url(/images/indian.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-graciosa.svg',
     main: 'La Graciosa',
     sub: 'Pequeño paraiso en la tierra',
   },
   {
     background: 'url(/images/cyan.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-palma.svg',
     main: 'La Palma',
     sub: 'Un espacio de contrastes',
   },
   {
     background: 'url(/images/orange.png)',
-    icon: 'fas fa-walking',
+    icon: '/icon-lanzarote.svg',
     main: 'Lanzarote',
     sub: 'Pura esencia volcánica',
   },
@@ -66,9 +66,9 @@ const Destinations: React.FC = () => {
     <Container>
       <div className="
         flex 
-        flex-row 
+        flex-row
+        items-center  
         justify-center 
-        items-center 
         cursor-pointer 
         m-4
         "        
